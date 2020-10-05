@@ -21,7 +21,7 @@ class Song
   def self.artists
     clnd = []
     @@artists.each do |val|
-      if clnd.key?(val)
+      if !clnd.include?(val)
         clnd << val
       end
     end
