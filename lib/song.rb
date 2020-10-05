@@ -18,16 +18,22 @@ class Song
   def self.count
     @@count
   end
-  def self.artist_count
-    @@artist_count
-  end
-
   def self.artists
-    @@artists
+    clnd = []
+    @@artists.each do |val|
+      if clnd.key?(val)
+        clnd << val
+      end
+    end
+    return clnd
   end
 
   def self.genres
     @@genres
+  end
+  
+  def self.artist_count
+    @@artist_count
   end
 
 end
