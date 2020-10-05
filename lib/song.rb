@@ -24,8 +24,8 @@ class Song
     @@artists
   end
 
-  def self.genre
-    @@genre
+  def self.genres
+    @@genres
   end
 
 end
