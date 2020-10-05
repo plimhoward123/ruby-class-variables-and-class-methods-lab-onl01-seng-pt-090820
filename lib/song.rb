@@ -10,9 +10,7 @@ class Song
     @genre = genre
     @artist = artist
 
-    if (artists.key?(@artist))
-      artists << artist
-    end
+    @@artists << artist
     @@genres << genre
     @@count += 1
   end
