@@ -42,9 +42,9 @@ class Song
   def self.artist_count
     artists.each do |val|
       if (@@artist_count.key?(val))
-        @@artist_count[val].value = @@artist_count[val].value + 1
-      else
         @@artist_count[val] = 1
+      else
+        @@artist_count[val].value += 1
       end
     end
     return @@artist_count
