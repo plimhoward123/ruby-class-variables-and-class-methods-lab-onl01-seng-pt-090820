@@ -18,11 +18,8 @@ class Song
     @@artist_count
   end
 
-  def self.artists=()
-    @@artists<<artist
-  end
   def self.artists
-    @@artists
+    @@artists<<artist
   end
 
 end
