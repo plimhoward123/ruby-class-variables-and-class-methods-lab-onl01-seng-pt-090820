@@ -14,6 +14,10 @@ class Song
   def self.count
     @@count
   end
+  def self.artist_count
+    @@artist_count
+  end
+  
   def self.artists=()
     @artists = []
   end
