@@ -29,7 +29,13 @@ class Song
   end
 
   def self.genres
-    @@genres
+    gnd = []
+    @@genres.each do |val|
+      if !gnd.include?(val)
+        gnd << val
+      end
+    end
+    return gnd
   end
 
   def self.artist_count
