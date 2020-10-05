@@ -27,9 +27,7 @@ class Song
   end
 
   def self.genres
-      genres.each do |gen|
-
-      end
+    @@genres
   end
 
 end
